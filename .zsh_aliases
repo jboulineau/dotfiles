@@ -1,0 +1,32 @@
+# AUTO_CD aliases
+hash -d s=~/source
+hash -d d=~/OneDrive\ -\ Allucea/Documents
+hash -d o=~/OneDrive\ -\ Allucea
+
+# aliases
+alias ll="exa -labug --git --group-directories-first"
+alias gss="git status -s"
+alias pwdgen="echo '{}()[]$*>\|&\!' | xargs -I %r pwgen -cnyvB -r %r 15"
+alias blrun="pgrep -f blazor-devserver | xargs kill && dotnet run"
+alias jks="bundle exec jekyll serve"
+alias aliases="cat ~/.zsh_aliases"
+alias code="code-insiders"
+alias ps="procs"
+
+# docker
+alias dbuild="docker build --rm"
+alias dprune="docker container prune"
+alias diprune="docker images --filter dangling=true -q --no-trunc | xargs docker image rm"
+alias dils="docker image ls"
+alias dirm="docker image rm"
+alias dexec="docker exec -it" 
+alias dbash="docker run -it --entrypoint /bin/bash"
+alias dlog="docker logs"
+alias dps="docker ps"
+alias ds="docker service"
+alias di="docker image"
+alias dc="docker container"
+alias dinspect="docker inspect"
+
+# functions
+

@@ -36,7 +36,7 @@ o.incsearch = true -- higlight search terms while typing
 o.hlsearch = false 
 
 -- spellchecking
-o.spelllang = "eng"
+o.spelllang = "en"
 o.spellsuggest = "best",9
 
 -- deal with whitespace
